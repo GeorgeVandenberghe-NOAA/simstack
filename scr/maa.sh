@@ -1,14 +1,45 @@
 # building hdf5,netcdf with parallel compressed support
 ## SET EXTERNALLY.  MODULES FOR COMPILER AND MPI ARE ALSO SET EXTERNALLY
 export CONFIG_SITE=/tmp/dummy
-export FC=$MPIFCOMP
-export CC=$C_COMP_MP
+#export FC=$MPIFCOMP
+#export CC=$C_COMP_MP
+#export FC=mpiifort
+#export CC=mpiicc
+#export CXX=mpiicpc
+#export FC=ftn
+#export CC=cc
+#export CXX=CC
+
+## check whether ftn (crays) or mpiifort should be used
+
+ ftn --help
+export EC=$?
+if [ $EC -ne 0 ]
+then
+mpiifort --help 2>&1 | wc
 export FC=mpiifort
 export CC=mpiicc
 export CXX=mpiicpc
+echo will use mpiifort
+else
+echo trying ftn
 export FC=ftn
 export CC=cc
 export CXX=CC
+fi
+
+mpiifort --help  
+export EC=$?
+echo $EC
+read a
+if [ $EC  -ne 0 ]
+then
+echo MPIIFORT AND FTN do not work.   set FC CC AND CXX manually
+echo by editing this script
+fi
+read a
+
+
 ##
 mkdir logs
 cp fixes/* .
