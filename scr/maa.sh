@@ -61,8 +61,8 @@ echo " export PREFIX=$PREFIX">>setupa
 echo " export NETP=$PREFIX" >>setupa
 echo " export CMAKE_PREFIX_PATH=$PREFIX" >>setupa
 echo " export ESMFMKFILE=$PREFIX/ESMF_8_4_1/lib/esmf.mk" >>setupa
-cp setupa /tmp
-cp setupa $HOME
+#cp setupa /tmp
+#cp setupa $HOME
 
 export LDFLAGS=-L${PREFIX}/lib
 export CPPFLAGS=-I${PREFIX}/include
