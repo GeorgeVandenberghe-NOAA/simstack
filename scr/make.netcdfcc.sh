@@ -1,3 +1,4 @@
+cd netcdf-c-4.9.2
 export LDFLAGS=-L${PREFIX}/lib
 export CPPFLAGS=-I${PREFIX}/include
 export LD_LIBRARY_PATH="$PREFIX/lib:${LD_LIBRARY_PATH}"
