@@ -1,9 +1,14 @@
-rm -rf build
+rm -rf build dists
 mkdir build
-cd build
-cp -r ../scr ./
+mkdir dists ; cd dists
+cp ../scr/*sh .
+sh -x ../scr/git.all.sh
+
+cd ../build
+#cp -r ../scr ./
 cp -r ../fixes/* .
 cp scr/* .
-sh -x git.all.sh
+#sh -x git.all.sh
+cp ../dists/*  .
 read a
-time sh -x maa.sh 2.&1 | tee bout
+time sh -x maa.sh 2>&1 | tee bout
