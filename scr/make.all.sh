@@ -5,10 +5,9 @@ cp ../scr/*sh .
 sh -x ../scr/git.all.sh
 
 cd ../build
-#cp -r ../scr ./
+cp -r ../scr ./
 cp -r ../fixes/* .
-cp scr/* .
 #sh -x git.all.sh
-cp ../dists/*  .
+cp  -r ../dists/*  .
 read a
 time sh -x maa.sh 2>&1 | tee bout
