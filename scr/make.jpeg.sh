@@ -2,7 +2,7 @@
 #*wget  https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/2.1.4.tar.gz
 rm -rf libjpeg-turbo-2.1.4
 
-tar -xvf 2.1.4.tar.gz
+tar -xvf jpeg.2.1.4.tar.gz
 
 cd libjpeg-turbo-2.1.4
 
