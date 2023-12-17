@@ -27,8 +27,9 @@ export FC=ftn
 export CC=cc
 export CXX=CC
 fi
-
-mpiifort --help  
+echo $FC --help
+read a
+$FC  --help  
 export EC=$?
 echo $EC
 read a

@@ -1,9 +1,12 @@
+rm -rf dists
+tar -xvf /tmp/dists.tar
 rm -rf build
 mkdir build
 cd build
 cp -r ../scr ./
 cp -r ../fixes/* .
 cp scr/* .
+rm -rf ../dists/*sh
 cp -r ../dists/* .
 #sh -x git.all.sh
 read a
