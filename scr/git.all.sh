@@ -205,6 +205,8 @@ wget   https://github.com/Goddard-Fortran-Ecosystem/yaFyaml/archive/refs/tags/v1
     wget  https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/2.1.4.tar.gz ; mv 2.1.4.tar.gz jpeg.2.1.4.tar.gz ; tar -xvf jpeg.2.1.4.tar.gz
 wget https://github.com/NCAR/ParallelIO/archive/refs/tags/pio2_5_10.tar.gz ; tar -xvf pio2_5_10.tar.gz  ;  mv  ParallelIO-pio2_5_10/  pio-2.5.10 ;  mkdir pio-2.5.10/genf90 
 wget  https://github.com/GEOS-ESM/ESMA_cmake/archive/refs/tags/v3.4.3.tar.gz ; mv v3.4.3.tar.gz esma.v3.4.3.tar.gz ; tar -xvf esma.v3.4.3.tar.gz
+rm -rf  zlib-1.2.11
+git clone --recursive https://github.com/madler/zlib zlib-1.2.11 ; cd zlib-1.2.11 ; git checkout v1.2.11
 
  
 
