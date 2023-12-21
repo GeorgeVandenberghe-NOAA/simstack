@@ -13,7 +13,7 @@ Build instructions
      When this completes ALL dependencies will be in ./.. something.. set in PREFIX in scr/maa.sh  with current value  ./netcdf140.492.460.mapl235.fms2301.crtm240.z 
      Dependencies,  are in this directory ./lib ./lib64 ./bin and ./include  and a user build can access them setting CMAKE_PREFIX_PATH to this directory.
      
-    An example
+    An example if the dependencies were built in /tmp/gwv/simstack/netcdf140.492.460.mapl235.fms2301.crtm240.z
 
  export CMAKE_PREFIX_PATH=/tmp/gwv/simstack/netcdf140.492.460.mapl235.fms2301.crtm240.z
  export ESMFMKFILE=/tmp/gwv/simstack/netcdf140.492.460.mapl235.fms2301.crtm240.z/ESMF_8_4_1/lib/esmf.mk
@@ -40,18 +40,33 @@ sh -x make.all.sh
 
 
 
-Then when its done, tar -cvf $SOMEWHERE.ON.HERA ./dist
+Then when its done, tar -cvf $SOMEWHERE.ON.HERA ./dists
 
 copy $SOMEWHERE.ON.HERA to  your system $SOMEWHERE.LOCAL as a tarball
 
-On your system
+On your blocked  system
 
 mkdir /tmp/sim
 cd /tmp/sim
 git clone https://github.com/George.Vandenberghe-NOAA/simstack
 cd simstack
 tar -xvf $SOMEWHERE.LOCAL
-sh -x make.deps.sh (it's make.all.sh with the dist gits removed)
+sh -x make.fromdist.sh (it's make.all.sh with the dist gits removed)
+
+
+1b.   It is possible for the build from contents in dists to fail since some distributions (gFTL) do internal gits inside cmake at build time)
+So far the following method has succeeded on such systems (airgapped to the Internet)
+
+Again on hera as the well connected system
+
+tar -cvf $SOMEWHERE.ON.HERA ./build
+
+copy the BUILD tarball to the airgapped system and untar it on the simstack root as above
+
+cd to ./build and run sh maa.sh   This will repeat the build but with internally prefetched packages inside the distributions e.g. gFTL
+
+
+This procedure was tested with hera as the well connected system and a jet compute node (tjet) as the internet disabled system.
 
 
 
