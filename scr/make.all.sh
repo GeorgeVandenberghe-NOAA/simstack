@@ -7,7 +7,10 @@ sh -x ../scr/git.all.sh
 cd ../build
 cp -r ../scr ./
 cp -r ../fixes/* .
-#sh -x git.all.sh
 cp  -r ../dists/*  .
 read a
 time sh -x maa.sh 2>&1 | tee bout
+cd ..
+tar -cvf build.tar build
+tar -cvf dists.tar dists
+

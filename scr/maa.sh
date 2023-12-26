@@ -28,17 +28,17 @@ export CC=cc
 export CXX=CC
 fi
 echo $FC --help
-read a
+#2reada
 $FC  --help  
 export EC=$?
 echo $EC
-read a
+#2reada
 if [ $EC  -ne 0 ]
 then
 echo MPIIFORT AND FTN do not work.   set FC CC AND CXX manually
 echo by editing this script
 fi
-read a
+#2reada
 
 
 ##
@@ -56,7 +56,7 @@ rm -rf $PREFIX
 mkdir -p $PREFIX $PREFIX/bin $PREFIX/include $PREFIX/lib
 
 sh -x scr/make.wgrib2.sh 2>&1 | tee make.wgrib2.out
-read a
+#2reada
 rm setupa
 echo " export PREFIX=$PREFIX">>setupa
 echo " export NETP=$PREFIX" >>setupa
@@ -86,13 +86,13 @@ tar -xvf  hdf5-1_14_0.tar.gz
 
 cd hdf5-hdf5-1_14_0/
 ./configure --prefix=$PREFIX --enable-hl --enable-parallel  --enable-fortran --disable-shared 2>&1 | tee ../logs/hdf5.config
-read a
+#2reada
 make clean
 make  2>&1 | tee logs/hdf5.make
 make install 2>&1 l | tee ../logs/hdf5.install
 ##############make check 
 echo HDF5 INSTALL DONE
-read a
+#2reada
 cd $PW
 #tar -xvf v4.7.4.tar.gz
 #cd netcdf-c-4.7.4 
@@ -106,7 +106,7 @@ make clean
 make  2>&1 | tee ../logs/netc.make
 make install  2>&1 | tee ../logs/netc.install
 echo NETCDF-C INSTALL DONE
-read a
+#2reada
 cd $PW
 #tar -xvf  netcdf-fortran-4.5.3.tar.gz
 #cd  netcdf-fortran-4.5.3
@@ -124,14 +124,14 @@ echo built $PREFIX  >>builds
 cd $PW
 #BUILD ESMF
 
-read a
-read a
+#2reada
+#2reada
 sh -x  make.esmf.sh 2>&1 | tee logs/esmf.log
 export PW=`/bin/pwd`
 cd $PW
-read a
-read a
-read a
+#2reada
+#2reada
+#2reada
 sh -x make.esma.sh 
 sh -x make.pio.sh |tee logs/pio.o
 cd $PW
@@ -143,7 +143,7 @@ cd $PW
 sh -x make.cmakemodules.sh | tee logs/cmakemodules.o
 cd $PW
 sh -x make.ecbuild.sh | tee logs/ecbuild.o
-#read a
+##2reada
 cd $PW
 sh -x make.gftl.sh
 #cd gftl/gftl-shared/
@@ -154,11 +154,11 @@ sh -x make.gftl.sh
 #make install
 #cd $PW
 sh -x make.gftl.sh 2>&1 | tee logs/gftl.o
-#read a
-#read a
-#read a
-#read a
-#read a
+##2reada
+##2reada
+##2reada
+##2reada
+##2reada
 
 sh -x make.yafyaml.sh | tee logs/yafyaml.o
 cd $PW
@@ -167,10 +167,10 @@ export GFTL_SHARED_ROOT=$PREFIX/GFTL_SHARED
 
 sh -x make.mapl2.sh 2>&1  | tee logs/mapl.o
 cd $PW
-#read a
+##2reada
 sh -x make.fms2023.01.sh  2>&1 | tee logs/fms.o
 cd $PW
-#read a
+##2reada
 sh -x make.crtm.sh   2>&1  | tee logs/crtm.o
 sh -x make.nceplibs.sh  2>&1  | tee logs/nceplibs.o
 sh -x make.upp.sh   2>&1  | tee logs/upp.o

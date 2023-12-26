@@ -4,7 +4,6 @@ for f in gfsio  g2 ip sigio sfcio bacio w3nco w3emc nemsio g2c g2tmpl landsfcuti
 do
 cd nceplibs-$f 
 sh -x ../cmake.sh
-read a
 cd $PW
 done
 cd nceplibs-sp

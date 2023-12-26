@@ -10,7 +10,6 @@ rm -rf build
 mkdir build
 cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=$NETP -DCMAKE_Fortran_COMPILER=$FC -DENABLE_TESTS=OFF -DOPENMP=OFF -DSHARED=OFF  -DENABLE_SHARED=0
-read a
 make clean
 make
 make install
