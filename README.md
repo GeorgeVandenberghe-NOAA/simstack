@@ -8,7 +8,7 @@ Build instructions
 
 1:  Full build
 
-    Preload MPI, the compiler, python and a recent cmake (system cmake is usually backload) with your system's module commands
+    Preload MPI, the compiler, python and a recent cmake (system cmake is usually too  backlevel to function with NOAA software builds) with your system's module commands
     Run the script sh scr/make.all.sh (should take about 100 minutes)
      When this completes ALL dependencies will be in ./.. something.. set in PREFIX in scr/maa.sh  with current value  ./netcdf140.492.460.mapl235.fms2301.crtm240.z 
      Dependencies,  are in this directory ./lib ./lib64 ./bin and ./include  and a user build can access them setting CMAKE_PREFIX_PATH to this directory.
@@ -36,7 +36,7 @@ module load intelpython/2022.3.0
 cd /tmp/sim
 git clone https://github.com/George.Vandenberghe-NOAA/simstack
 cd simstack
-sh -x make.all.sh
+sh -x scr/make.all.sh
 
 
 
@@ -51,7 +51,7 @@ cd /tmp/sim
 git clone https://github.com/George.Vandenberghe-NOAA/simstack
 cd simstack
 tar -xvf $SOMEWHERE.LOCAL
-sh -x make.fromdist.sh (it's make.all.sh with the dist gits removed)
+sh -x scr/make.fromdist.sh (it's make.all.sh with the dist gits removed)
 
 
 1b.   It is possible for the build from contents in dists to fail since some distributions (gFTL) do internal gits inside cmake at build time)

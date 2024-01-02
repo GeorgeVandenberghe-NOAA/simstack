@@ -126,10 +126,10 @@ cp make.udunits.intenal.sh udunits-2.2.28/make.sh
 cd  udunits-2.2.28
 #sh -x make.sh
 cd $PW
-rm  -rf fckt.0.10.1
-git clone https://github.com/ecmwf/fckit.git fckit.0.10.1
-cd fckit.0.10.1
-git checkout 0.10.1
+rm  -rf fckt.*
+git clone https://github.com/ecmwf/fckit.git fckit.0.11.0
+cd fckit.0.11.0
+git checkout 0.11.0
 #sh -x ../cmake.sh
 
 cd $PW
