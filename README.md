@@ -69,4 +69,6 @@ cd to ./build and run sh maa.sh   This will repeat the build but with internally
 This procedure was tested with hera as the well connected system and a jet compute node (tjet) as the internet disabled system.
 
 
+An alternate build for global workflow is supplied in ./global.sorc.   cd to ./global.sorc and do cp -r * to your global workflow ./sorc  clone.  All
+of these files are additions to the build system and work instead of the build system.  NONE are modifications to the build system.
 
