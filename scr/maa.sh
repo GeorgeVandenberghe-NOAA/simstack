@@ -168,7 +168,9 @@ export GFTL_SHARED_ROOT=$PREFIX/GFTL_SHARED
 sh -x make.mapl2.sh 2>&1  | tee logs/mapl.o
 cd $PW
 ##2reada
-sh -x make.fms2023.01.sh  2>&1 | tee logs/fms.o
+#sh -x make.fms2023.01.sh  2>&1 | tee logs/fms.o
+sh -x make.fms.sh 2>&1 | tee logs/fms.o
+
 cd $PW
 ##2reada
 sh -x make.crtm.sh   2>&1  | tee logs/crtm.o

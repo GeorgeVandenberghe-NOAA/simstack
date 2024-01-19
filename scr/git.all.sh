@@ -202,6 +202,7 @@ rm -rf pil-2.5.10  pio2_5_10.tar.gz ;  wget https://github.com/NCAR/ParallelIO/a
 git clone https://github.com/Goddard-Fortran-Ecosystem/gFTL-shared 
 wget   https://github.com/Goddard-Fortran-Ecosystem/yaFyaml/archive/refs/tags/v1.0.4.tar.gz ; mv v1.0.4.tar.gz yafyaml.v1.0.4.tar.gz
  wget https://github.com/NOAA-GFDL/FMS/archive/refs/tags/2023.01.tar.gz ; mv 2023.01.tar.gz FMS.2023.01.tar.gz ; tar -xvf FMS.2023.01.tar.gz 
+ wget https://github.com/NOAA-GFDL/FMS/archive/refs/tags/2023.02.01.tar.gz ; mv 2023.02.01.tar.gz FMS.2023.02.01.tar.gz ; tar -xvf FMS.2023.02.01.tar.gz 
     wget  https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/2.1.4.tar.gz ; mv 2.1.4.tar.gz jpeg.2.1.4.tar.gz ; tar -xvf jpeg.2.1.4.tar.gz
 wget https://github.com/NCAR/ParallelIO/archive/refs/tags/pio2_5_10.tar.gz ; tar -xvf pio2_5_10.tar.gz  ;  mv  ParallelIO-pio2_5_10/  pio-2.5.10 ;  mkdir pio-2.5.10/genf90 
 wget  https://github.com/GEOS-ESM/ESMA_cmake/archive/refs/tags/v3.4.3.tar.gz ; mv v3.4.3.tar.gz esma.v3.4.3.tar.gz ; tar -xvf esma.v3.4.3.tar.gz
