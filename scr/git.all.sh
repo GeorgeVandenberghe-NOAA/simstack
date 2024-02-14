@@ -195,8 +195,9 @@ wget https://github.com/Unidata/netcdf-c/archive/v4.9.2.tar.gz ; mv v4.9.2.tar.g
 wget https://github.com/Unidata/netcdf-fortran/archive/v4.5.3.tar.gz ; mv v4.5.3.tar.gz netcdf-fortran.v4.5.3.tar.gz
 wget https://github.com/Unidata/netcdf-fortran/archive/v4.6.0.tar.gz ; mv v4.6.0.tar.gz netcdf-fortran.v4.6.0.tar.gz ; tar -xvf netcdf-fortran.v4.6.0.tar.gz
 wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.4.1.tar.gz ;  mv  v8.4.1.tar.gz esmf.v8.4.1.tar.gz
+wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.5.0.tar.gz ;  mv  v8.5.0.tar.gz esmf.v8.5.0.tar.gz
 
-#wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.40.3.tar.gz  ; mv v2.40.3.tar.gz MAPL.v2.40.3.tar.gz ; tar -xvf MAPL.v2.40.3.tar.gz 
+wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.40.3.tar.gz  ; mv v2.40.3.tar.gz MAPL.v2.40.3.tar.gz ; tar -xvf MAPL.v2.40.3.tar.gz 
 wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.35.2.tar.gz  ; mv v2.35.2.tar.gz MAPL.v2.35.2.tar.gz ; tar -xvf MAPL.v2.35.2.tar.gz 
 rm -rf pil-2.5.10  pio2_5_10.tar.gz ;  wget https://github.com/NCAR/ParallelIO/archive/refs/tags/pio2_5_10.tar.gz ; tar -xvf pio2_5_10.tar.gz  ;  mv  ParallelIO-pio2_5_10/  pio-2.5.10 ;  mkdir pio-2.5.10/genf90 
 git clone https://github.com/Goddard-Fortran-Ecosystem/gFTL-shared 
@@ -210,5 +211,5 @@ rm -rf  zlib-1.2.11
 git clone --recursive https://github.com/madler/zlib zlib-1.2.11 ; cd zlib-1.2.11 ; git checkout v1.2.11
 cd $PW
 wget -nv https://boostorg.jfrog.io/artifactory/main/release/1.68.0/source/boost_1_68_0.tar.gz
- 
+wget  https://gitlab.inria.fr/scotch/scotch/-/archive/v7.0.4/scotch-v7.0.4.tar.gz ; tar -xvf scotch-v7.0.4.tar.gz 
 
