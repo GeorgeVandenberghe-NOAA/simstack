@@ -1,0 +1,9 @@
+cd zstd-1.5.5
+rm -rf builda
+mkdir builda
+cd builda
+/bin/pwd
+        cmake  ../build/cmake/  -LH -DCMAKE_INSTALL_PREFIX=$NETP/SHARED/zstd -DCMAKE_INSTALL_LIBDIR=lib -DZSTD_MULTITHREAD_SUPPORT=OFF -DZSTD_LEGACY_SUPPORT=OFF -DZSTD_BUILD_STATIC=ON -DZSTD_BUILD_SHARED=OFF -DZSTD_BUILD_PROGRAMS=OFF
+make -j 1 VERBOSE=1
+make install
+
