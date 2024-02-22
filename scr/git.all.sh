@@ -212,4 +212,6 @@ git clone --recursive https://github.com/madler/zlib zlib-1.2.11 ; cd zlib-1.2.1
 cd $PW
 wget -nv https://boostorg.jfrog.io/artifactory/main/release/1.68.0/source/boost_1_68_0.tar.gz
 wget  https://gitlab.inria.fr/scotch/scotch/-/archive/v7.0.4/scotch-v7.0.4.tar.gz ; tar -xvf scotch-v7.0.4.tar.gz 
+wget  https://github.com/facebook/zstd/releases/download/v1.5.5/zstd-1.5.5.tar.gz ;  rm -rf zstd-1.5.5 ; tar -xvf zstd-1.5.5.tar.gz
+
 
