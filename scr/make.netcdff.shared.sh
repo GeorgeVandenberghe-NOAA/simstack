@@ -13,7 +13,7 @@ tar -xvf netcdf-fortran.v4.6.0.tar.gz
 
 cd netcdf-fortran-4.6.0
 export LIBS=`$PREFIX/SHARED/bin/nc-config --libs`
- ./configure --prefix=$PREFIX   --enable-shared  2>&1 | tee ../logs/netf.config
+ ./configure --prefix=$PREFIX/shared   --enable-shared  2>&1 | tee ../logs/netf.config
 make clean
 make  2>&1  | tee ../logs/netf.make
 make install  2>&1  | tee ../logs/netf.install
