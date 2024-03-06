@@ -5,11 +5,8 @@ export LD_LIBRARY_PATH="$PREFIX/SHARED/lib:${LD_LIBRARY_PATH}"
 export install_prefix=$PREFIX/SHARED
 export LIBS="-lhdf5_hl -lhdf5 -lz -lzstd -lm"
 echo $CPPFLAGS
-read a
 make clean
-read a
 ./configure --enable-netcdf4      --disable-libxml2 --prefix=$PREFIX/SHARED   --enable-shared --disable-byterange
-read a
 make
 make install
 echo $CPPFLAGS
