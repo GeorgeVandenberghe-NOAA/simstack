@@ -1,12 +1,18 @@
 cd netcdf-c-4.9.2
 export LDFLAGS="-L${PREFIX}/SHARED/lib -L$PREFIX/SHARED/zstd/lib   -Wl,-rpath -Wl,$PREFIX/SHARED/lib"
-export CPPFLAGS="-I${PREFIX}/include -I $PREFIX/SHARED/zstd/include"
+export CPPFLAGS="-I${PREFIX}/SHARED/include -I $PREFIX/SHARED/zstd/include"
 export LD_LIBRARY_PATH="$PREFIX/SHARED/lib:${LD_LIBRARY_PATH}"
+export install_prefix=$PREFIX/SHARED
 export LIBS="-lhdf5_hl -lhdf5 -lz -lzstd -lm"
+echo $CPPFLAGS
+read a
 make clean
-./configure --enable-netcdf4  --prefix=$PREFIX/SHARED   --enable-shared
+read a
+./configure --enable-netcdf4      --disable-libxml2 --prefix=$PREFIX/SHARED   --enable-shared --disable-byterange
+read a
 make
 make install
+echo $CPPFLAGS
 exit
 if(USE_ZSTD_AND_DYNAMIC_HDF5)
     set(netcdf_cppflags_env        "CPPFLAGS=-I${install_prefix}/hdf5/include -I${install_prefix}/zstd/include")

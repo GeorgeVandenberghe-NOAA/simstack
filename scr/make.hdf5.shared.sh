@@ -17,7 +17,7 @@ tar -xvf  hdf5-1_14_0.tar.gz
 
 cd hdf5-hdf5-1_14_0/
 ./configure --prefix=$PREFIX/SHARED  --enable-hl --enable-parallel  --enable-fortran --enable-shared --disable-static  2>&1 | tee ../logs/hdf5.config
-read a
+#read a
 make clean
 make  2>&1 | tee logs/hdf5.make
 make install 2>&1 l | tee ../logs/hdf5.install
