@@ -174,6 +174,11 @@ rm -rf jasper-2*
 git clone --recursive  https://github.com/jasper-software/jasper jasper-2.0.25
 cd jasper-2.0.25
 git checkout version-2.0.25
+cd ..
+
+tar -cvf jasper.2.0.25.tar jasper-2.0.25
+rm -rf  jasper-2.0.25
+
 cd $PW
 export CV=v2.4.0_emc ; rm -rf crtm.$CV
 git clone  https://github.com/JCSDA/crtm crtm.$CV 

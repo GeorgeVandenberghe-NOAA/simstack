@@ -2,7 +2,6 @@
 ## SET EXTERNALLY.  MODULES FOR COMPILER AND MPI ARE ALSO SET EXTERNALLY
 export PW=`/bin/pwd`
 export CONFIG_SITE=/tmp/dummy
-export PREFIX=`cd ../ ; /bin/pwd`/netcdf140.492.460.mapl235.fms2301.crtm240.z
 export NETP=$PREFIX
 export CMAKE_PREFIX_PATH=$PREFIX
 export GSILIBS=$PREFIX
@@ -21,7 +20,6 @@ export LIBS=`$PREFIX/bin/nc-config --libs`
 make clean
 make  2>&1  | tee ../logs/netf.make
 make install  2>&1  | tee ../logs/netf.install
-read a
 cd $PW
 cd netcdf-cxx4
 sh -x ../make.netcdfcc.sh

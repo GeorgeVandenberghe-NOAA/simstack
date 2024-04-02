@@ -2,7 +2,6 @@
 ## SET EXTERNALLY.  MODULES FOR COMPILER AND MPI ARE ALSO SET EXTERNALLY
 export CONFIG_SITE=/tmp/dummy
 export PW=`/bin/pwd`
-export PREFIX=`cd ../ ; /bin/pwd`/netcdf140.492.460.mapl235.fms2301.crtm240.z
 export NETP=$PREFIX
 export CMAKE_PREFIX_PATH=$PREFIX
 export GSILIBS=$PREFIX

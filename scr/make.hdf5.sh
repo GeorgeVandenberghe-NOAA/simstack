@@ -2,7 +2,7 @@
 ## SET EXTERNALLY.  MODULES FOR COMPILER AND MPI ARE ALSO SET EXTERNALLY
 export CONFIG_SITE=/tmp/dummy
 export PW=`/bin/pwd`
-export PREFIX=`cd ../ ; /bin/pwd`/netcdf140.492.460.mapl235.fms2301.crtm240.z
+#export PREFIX=`cd ../ ; /bin/pwd`/netcdf140.492.460.mapl235.fms2301.crtm240.z
 export NETP=$PREFIX
 export CMAKE_PREFIX_PATH=$PREFIX
 export GSILIBS=$PREFIX
@@ -17,7 +17,6 @@ tar -xvf  hdf5-1_14_0.tar.gz
 
 cd hdf5-hdf5-1_14_0/
 ./configure --prefix=$PREFIX --enable-hl --enable-parallel  --enable-fortran --disable-shared 2>&1 | tee ../logs/hdf5.config
-read a
 make clean
 make  2>&1 | tee logs/hdf5.make
 make install 2>&1 l | tee ../logs/hdf5.install
