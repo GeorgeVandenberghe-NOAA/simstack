@@ -6,7 +6,7 @@ export install_prefix=$PREFIX/SHARED
 export LIBS="-lhdf5_hl -lhdf5 -lz -lzstd -lm"
 echo $CPPFLAGS
 make clean
-./configure --enable-netcdf4      --disable-libxml2 --prefix=$PREFIX/SHARED   --enable-shared --disable-byterange
+./configure --enable-netcdf4  --enable-logging     --disable-libxml2 --prefix=$PREFIX/SHARED   --enable-shared --disable-byterange
 make
 make install
 echo $CPPFLAGS
