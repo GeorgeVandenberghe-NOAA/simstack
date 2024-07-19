@@ -141,4 +141,5 @@ rm -rf netcdf-c-4.7.4  netcdf-fortran-4.5.3  netcf-fortran-4.6.0  netcdf-c-4.9.1
 rm -rf esmf-8.4.1
 time sh -x make.scotch.sh 2>&1 | tee logs/scotch.log
 time sh -x make.shared.stuff.sh 2>&1 | tee shared.stuff.log
-sh -x scr/make.wgrib2.sh 2>&1 | tee make.wgrib2.out
+echo WGRIB2 NOT MADE .. COMMENTED OUT
+#sh -x scr/make.wgrib2.sh 2>&1 | tee make.wgrib2.out
