@@ -201,6 +201,7 @@ wget https://github.com/Unidata/netcdf-fortran/archive/v4.5.3.tar.gz ; mv v4.5.3
 wget https://github.com/Unidata/netcdf-fortran/archive/v4.6.0.tar.gz ; mv v4.6.0.tar.gz netcdf-fortran.v4.6.0.tar.gz ; tar -xvf netcdf-fortran.v4.6.0.tar.gz
 wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.4.1.tar.gz ;  mv  v8.4.1.tar.gz esmf.v8.4.1.tar.gz
 wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.5.0.tar.gz ;  mv  v8.5.0.tar.gz esmf.v8.5.0.tar.gz
+wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.6.1.tar.gz ;  mv  v8.6.1.tar.gz esmf.v8.6.1.tar.gz
 
 wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.40.3.tar.gz  ; mv v2.40.3.tar.gz MAPL.v2.40.3.tar.gz ; tar -xvf MAPL.v2.40.3.tar.gz 
 wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.35.2.tar.gz  ; mv v2.35.2.tar.gz MAPL.v2.35.2.tar.gz ; tar -xvf MAPL.v2.35.2.tar.gz 
