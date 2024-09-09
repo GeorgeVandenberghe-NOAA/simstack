@@ -3,7 +3,7 @@ export PW=`/bin/pwd`
 rm -rf esmf-8.5.0
 tar -xvf esmf.v8.5.0.tar.gz
 cd esmf-8.5.0
-sh -x ../fixit
+##sh -x ../fixit
 # ---------------> COMMON PORTION <-------------------
 export NETCDF=$PREFIX
 export HDF5_DIR=$NETCDF
