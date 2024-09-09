@@ -3,6 +3,7 @@ export PW=`/bin/pwd`
 rm -rf esmf-8.6.1
 tar -xvf  esmf.v8.6.1.tar.gz
 cd esmf-8.6.1
+sh -x ../fixit
 
 # ---------------> COMMON PORTION <-------------------
 export NETCDF=$PREFIX
@@ -41,8 +42,8 @@ export ESMF_NETCDF=split
 export NETCDF_DIR=$NETCDF
 export ESMF_NETCDF_INCLUDE=$NETCDF_DIR/include
 export ESMF_NETCDF_LIBPATH=$NETCDF_DIR/lib
-export ESMF_F90COMPILEOPTS="-fp-model source"
-export ESMF_CXXCOMPILEOPTS="-fp-model source"
+#export ESMF_F90COMPILEOPTS="-fp-model source"
+#export ESMF_CXXCOMPILEOPTS="-fp-model source"
 
 
 gmake clean      

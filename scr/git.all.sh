@@ -1,13 +1,13 @@
 export PW=`/bin/pwd`
    rm -rf nceplibs*
 export  CMAKE_PREFIX_PATH=$NETP 
-for f in ip sp sigio sfcio bacio w3nco w33mc nemsio g2c g2tmpl gfsio
+for f in ip sp sigio sfcio bacio w3nco w3emc nemsio g2c g2tmpl gfsio
 do
 rm -rf nceplibs-$f
 done
 git clone  https://github.com/noaa-emc/nceplibs-g2
 cd nceplibs-g2
-git checkout v3.4.5
+git checkout v3.5.1
 rm -rf build
 mkdir build
 cd build
@@ -54,7 +54,7 @@ cd nceplibs-w3nco
 cd $PW
 git clone https://github.com/noaa-emc/nceplibs-w3emc
 cd nceplibs-w3emc
-  git checkout v2.9.2
+  git checkout v2.10.0
 #  sh -x ../cmake.sh
 cd $PW
    git clone https://github.com/noaa-emc/nceplibs-nemsio
@@ -69,7 +69,7 @@ cd $PW
 cd $PW
   git clone  https://github.com/noaa-emc/nceplibs-g2tmpl
  cd nceplibs-g2tmpl
-  git checkout v1.10.2
+  git checkout v1.13.0
 #  sh -x ../cmake.sh
 cd $PW
 git clone  https://github.com/noaa-emc/nceplibs-gfsio
@@ -203,6 +203,7 @@ wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.4.1.tar.gz ;  mv  v8
 wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.5.0.tar.gz ;  mv  v8.5.0.tar.gz esmf.v8.5.0.tar.gz
 wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.6.1.tar.gz ;  mv  v8.6.1.tar.gz esmf.v8.6.1.tar.gz
 
+wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.46.3.tar.gz  ; mv v2.46.3.tar.gz MAPL.v2.46.3.tar.gz ; tar -xvf MAPL.v2.46.3.tar.gz 
 wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.40.3.tar.gz  ; mv v2.40.3.tar.gz MAPL.v2.40.3.tar.gz ; tar -xvf MAPL.v2.40.3.tar.gz 
 wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.35.2.tar.gz  ; mv v2.35.2.tar.gz MAPL.v2.35.2.tar.gz ; tar -xvf MAPL.v2.35.2.tar.gz 
 rm -rf pil-2.5.10  pio2_5_10.tar.gz ;  wget https://github.com/NCAR/ParallelIO/archive/refs/tags/pio2_5_10.tar.gz ; tar -xvf pio2_5_10.tar.gz  ;  mv  ParallelIO-pio2_5_10/  pio-2.5.10 ;  mkdir pio-2.5.10/genf90 

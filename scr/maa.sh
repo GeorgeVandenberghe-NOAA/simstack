@@ -6,6 +6,10 @@ export CONFIG_SITE=/tmp/dummy
 
  ftn --help
 export EC=$?
+if $FC
+then
+	echo COMPILER ALREADY SET
+else
 if [ $EC -ne 0 ]
 then
 mpiifort --help 2>&1 | wc
@@ -18,6 +22,7 @@ echo trying ftn
 export FC=ftn
 export CC=cc
 export CXX=CC
+fi
 fi
 echo $FC --help
 $FC  --help  
@@ -45,7 +50,7 @@ rm setupa
 echo " export PREFIX=$PREFIX">>setupa
 echo " export NETP=$PREFIX" >>setupa
 echo " export CMAKE_PREFIX_PATH=$PREFIX" >>setupa
-echo " export ESMFMKFILE=$PREFIX/ESMF_8_4_1/lib/esmf.mk" >>setupa
+echo " export ESMFMKFILE=$PREFIX/ESMF_8_5_0/lib/esmf.mk" >>setupa
 
 
 rm -rf netcdf-c-4.7.4  netcdf-fortran-4.5.3  netcf-fortran-4.6.0  netcdf-c-4.9.1 netcdf-c.v4.9.2.tar.gz hdf5.122 netcdf-fortran-4.6.0/
@@ -96,6 +101,7 @@ export GFTL_SHARED_ROOT=$PREFIX/GFTL_SHARED
 
 sh -x make.mapl2.sh 2>&1  | tee logs/mapl235.o
 sh -x make.mapl3.sh 2>&1  | tee logs/mapl240.o
+sh -x make.mapl4.sh 2>&1  | tee logs/mapl240.o
 cd $PW
 sh -x make.fms.sh 2>&1 | tee logs/fms.o
 

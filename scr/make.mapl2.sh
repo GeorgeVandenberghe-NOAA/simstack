@@ -39,7 +39,7 @@ export NTHREADS=4
  cmake .. \
       -DCMAKE_INSTALL_PREFIX=$prefix  -DUSE_F2PY=OFF \
       -DCMAKE_MODULE_PATH="${ESMA_CMAKE_ROOT};${CMAKEMODULES_ROOT}/Modules;${ECBUILD_ROOT}/share/ecbuild/cmake" \
-      -DCMAKE_BUILD_TYPE=Release \
+      -DCMAKE_BUILD_TYPE=Release -DCMAKE_Fortran_COMPILER=mpiifort \
       -DBUILD_WITH_FLAP=OFF \
       -DBUILD_WITH_PFLOGGER=OFF \
       -DBUILD_WITH_FARGPARSE=OFF \

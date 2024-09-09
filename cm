@@ -1,0 +1,7 @@
+rm -rf build
+mkdir build
+cd build
+export CMAKE_PREFIX_PATH=$NETP/fms.2023.04:$NETP/MAPL-2.40.3/:$NETP
+cmake ..  -DAPP=S2SWA -D32BIT=ON -DCCPP_SUITES=FV3_GFS_v17_p8,FV3_GFS_v17_coupled_p8 -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DMOM6SOLO=ON
+make -j 8 
+cp ufs_model ../tests/ufs_model.x

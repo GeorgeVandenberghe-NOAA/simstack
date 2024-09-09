@@ -1,6 +1,6 @@
 export PW=`/bin/pwd`
 export  CMAKE_PREFIX_PATH=$NETP 
-for f in gfsio  g2 ip sigio sfcio bacio w3nco w3emc nemsio g2c g2tmpl landsfcutil
+for f in gfsio   ip sigio sfcio bacio w3nco bufr  w3emc   g2 nemsio g2c g2tmpl landsfcutil
 do
 cd nceplibs-$f 
 sh -x ../cmake.sh
