@@ -14,5 +14,6 @@ tar -cvf build.tar build
 tar -cvf dists.tar dists
 cd global.sorc
 tar -cvf ../build/workflow.tests.tar .
-
+cd ..
+time sh -x check.ufs
 
