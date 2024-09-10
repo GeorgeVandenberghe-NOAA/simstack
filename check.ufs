@@ -1,0 +1,5 @@
+sh -x gitufs
+cd u
+source ../build/setupa
+sh -x ../cm
+
