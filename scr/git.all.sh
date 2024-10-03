@@ -1,4 +1,6 @@
 export PW=`/bin/pwd`
+wget https://parallel-netcdf.github.io/Release/pnetcdf-1.13.0.tar.gz ; tar -xvf pnetcdf-1.13.0.tar.gz
+
    rm -rf nceplibs*
 export  CMAKE_PREFIX_PATH=$NETP 
 for f in ip sp sigio sfcio bacio w3nco w3emc nemsio g2c g2tmpl gfsio
