@@ -38,7 +38,7 @@ export NTHREADS=4
 
 #source $HOME/envset
  cmake .. \
-      -DCMAKE_INSTALL_PREFIX=$prefix/MAPL-2.40.3  -DUSE_F2PY=OFF -DCMAKE_Fortran_COMPILER=$FC \
+      -DCMAKE_INSTALL_PREFIX=$NETP -DUSE_F2PY=OFF -DCMAKE_Fortran_COMPILER=$FC \
       -DCMAKE_MODULE_PATH="${ESMA_CMAKE_ROOT};${CMAKEMODULES_ROOT}/Modules;${ECBUILD_ROOT}/share/ecbuild/cmake" \
       -DCMAKE_BUILD_TYPE=Release \
       -DBUILD_WITH_FLAP=OFF \

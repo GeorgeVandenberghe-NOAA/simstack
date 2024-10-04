@@ -1,12 +1,14 @@
 export NETCDROOT=$PREFIX
 export PW=`/bin/pwd`
 set -e
-cd FMS-2023.01
+
+#DEFAULT
+cd FMS-2023.04
 rm -rf build ; mkdir build ; cd build
 cmake  -DCMAKE_INSTALL_PREFIX=$PREFIX  -DCMAKE_PREFIX_PATH=$NETCDROOT -DCMAKE_C_FLAGS=${CFLAGS_fms} -DCMAKE_Fortran_FLAGS=${FCFLAGS_fms} -DGFS_PHYS=ON -D64BIT=ON -DOPENMP=ON -DCONSTANTS=GFS ..
-
 make -j 4
 make install
+
 cd $PW/FMS-2023.01
 # FMS2023.01 directory population
 rm -rf build ; mkdir build ; cd build
