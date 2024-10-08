@@ -1,0 +1,10 @@
+cd $NETP/lib
+rm -rf d1
+mkdir d1
+mkdir old
+cp libpioc.a old
+cd d1
+ar -x ../libpioc.a
+ar -x ../libpnetcdf.a
+ar -ruv ../libpioc.a *.o
+                         

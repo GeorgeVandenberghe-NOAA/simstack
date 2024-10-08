@@ -150,5 +150,5 @@ rm -rf esmf-8.4.1
 time sh -x make.scotch.sh 2>&1 | tee logs/scotch.log
 time sh -x make.shared.stuff.sh 2>&1 | tee shared.stuff.log
 echo WGRIB2 NOT MADE .. COMMENTED OUT
-sh  -x ../scr/libfix
+sh  -x ../scr/fixlib
 #sh -x scr/make.wgrib2.sh 2>&1 | tee make.wgrib2.out
