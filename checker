@@ -1,0 +1,10 @@
+rm goodlist badlist
+ for f in `cat ../FILES` 
+ do 
+if    test -f $f 
+ then
+ echo good $f >>goodlist
+ else echo bad $f >>badlist
+fi
+ done
+
