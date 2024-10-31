@@ -1,5 +1,5 @@
 rm goodlist badlist
- for f in `cat ../FILES` 
+ for f in `cat ../FILES.BASE` 
  do 
 if    test -f $f 
  then
