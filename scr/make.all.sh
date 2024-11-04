@@ -16,4 +16,6 @@ cd global.sorc
 tar -cvf ../build/workflow.tests.tar .
 cd ..
 time sh -x check.ufs
+cd $PREFIX 
+time sh -x ../checker
 

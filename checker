@@ -8,3 +8,13 @@ if    test -f $f
 fi
  done
 
+if test  -f badlist
+then
+echo THE FOLLOWING DID NOT BUILD
+cat badlist
+echo
+echo SOME PACKAGES DID NOT BUILD
+else
+echo ALL DEPENDENCIES BUILT
+fi
+
