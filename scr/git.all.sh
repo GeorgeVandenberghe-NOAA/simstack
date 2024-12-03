@@ -122,6 +122,7 @@ git clone https://github.com/ecmwf/atlas.git atlas.0.34.0
 cd atlas.0.34.0
 git checkout 0.34.0
 cd $PW
+wget https://github.com/libexpat/libexpat/releases/download/R_2_6_4/expat-2.6.4.tar.gz ; tar -xvf expat-2.6.4.tar.gz
 wget https://downloads.unidata.ucar.edu/udunits/2.2.28/udunits-2.2.28.tar.gz
 tar -xvf udunits-2.2.28.tar.gz
 cp make.udunits.intenal.sh udunits-2.2.28/make.sh
