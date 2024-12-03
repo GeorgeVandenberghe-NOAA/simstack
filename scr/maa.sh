@@ -121,15 +121,15 @@ cd atlas.0.34.0
 sh -x ../cmake.sh
 cd $PW
 
-cd udunits-2.2.28
-sh -x make.sh
-cd $PW
 rm -rf expat-2.6.4
 tar -xvf expat-2.6.4.tar.gz 
 cd expat-2.6.4
 make clean
 ./configure --prefix=$PREFIX
 make install
+cd $PW
+cd udunits-2.2.28
+sh -x make.sh
 cd $PW
 
 cd ecbuild.3.7.0
