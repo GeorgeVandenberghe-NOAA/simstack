@@ -1,3 +1,4 @@
-#cat build_config/Linux.intel.default/build_rules.mk | sed 's/mpiicc/mpiicx/g' | sed 's/mpiicpc/mpiicpx/g' >/tmp/in.$USER
-#cp /tmp/in.$USER  build_config/Linux.intel.default/build_rules.mk
+export pi=$$
+cat build_config/Linux.intel.default/build_rules.mk | sed 's/mpiicc/mpiicx/g' | sed 's/mpiicpc/mpiicpx/g' >/tmp/in.$USER.$pi
+cp /tmp/in.$USER.$pi  build_config/Linux.intel.default/build_rules.mk
 
