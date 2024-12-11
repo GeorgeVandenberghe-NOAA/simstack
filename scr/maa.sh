@@ -128,8 +128,7 @@ make clean
 ./configure --prefix=$PREFIX
 make install
 cd $PW
-cd udunits-2.2.28
-sh -x make.sh
+sh -x make.udunits.sh
 cd $PW
 
 cd ecbuild.3.7.0
