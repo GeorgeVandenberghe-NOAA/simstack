@@ -28,6 +28,7 @@ git checkout v2.4.0
 cp ../CMakelists.txt.sp .
 #sh -x ../cmake.sh.omp
 cd $PW
+git clone  https://github.com/Goddard-Fortran-Ecosystem/fArgParse.git fargparse
 
    git clone https://github.com/noaa-emc/nceplibs-sigio
     cd nceplibs-sigio

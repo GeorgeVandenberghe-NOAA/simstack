@@ -79,6 +79,7 @@ sh -x  make.esmf.sh 2>&1 | tee logs/esmf.log
 
 export PW=`/bin/pwd`
 cd $PW
+sh -x make.fargparse.sh
 sh -x make.pnetcdf.sh
 sh -x make.esma.sh 
 sh -x make.pio.sh |tee logs/pio.o
