@@ -1,5 +1,5 @@
 
-./configure --prefix=$PREFIX --disable-shared --enable-static
+./configure --prefix=$PREFIX --enable-shared --enable-static
 make
 make install
 

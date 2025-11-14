@@ -215,6 +215,8 @@ wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.46.4.tar.gz  ; mv v2.
 wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.46.3.tar.gz  ; mv v2.46.3.tar.gz MAPL.v2.46.3.tar.gz ; tar -xvf MAPL.v2.46.3.tar.gz 
 wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.40.3.tar.gz  ; mv v2.40.3.tar.gz MAPL.v2.40.3.tar.gz ; tar -xvf MAPL.v2.40.3.tar.gz 
 wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.35.2.tar.gz  ; mv v2.35.2.tar.gz MAPL.v2.35.2.tar.gz ; tar -xvf MAPL.v2.35.2.tar.gz 
+wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.53.0.tar.gz  ; mv v2.53.0.tar.gz MAPL.v2.53.0.tar.gz ; tar -xvf MAPL.v2.53.0.tar.gz 
+
 rm -rf pil-2.5.10  pio2_5_10.tar.gz ;  wget https://github.com/NCAR/ParallelIO/archive/refs/tags/pio2_5_10.tar.gz ; tar -xvf pio2_5_10.tar.gz  ;  mv  ParallelIO-pio2_5_10/  pio-2.5.10 ;  mkdir pio-2.5.10/genf90 
 git clone https://github.com/Goddard-Fortran-Ecosystem/gFTL-shared 
 wget   https://github.com/Goddard-Fortran-Ecosystem/yaFyaml/archive/refs/tags/v1.0.4.tar.gz ; mv v1.0.4.tar.gz yafyaml.v1.0.4.tar.gz

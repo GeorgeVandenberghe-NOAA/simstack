@@ -104,6 +104,7 @@ export GFTL_SHARED_ROOT=$PREFIX/GFTL_SHARED
 sh -x make.mapl2.sh 2>&1  | tee logs/mapl235.o
 sh -x make.mapl3.sh 2>&1  | tee logs/mapl240.o
 sh -x make.mapl4.sh 2>&1  | tee logs/mapl246.o
+sh -x make.mapl5.sh 2>&1  | tee logs/mapl253.o
 cd $PW
 sh -x make.fms.sh 2>&1 | tee logs/fms.o
 
