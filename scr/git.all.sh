@@ -199,7 +199,7 @@ cd $PW
 wget -nv www.ftp.cpc.ncep.noaa.gov/wd51we/wgrib2/wgrib2.tgz.v3.1.1 ; tar -xvf wgrib2.tgz.v3.1.1 ; mv grib2 wgrib2.3.1.1
 wget  https://github.com/GEOS-ESM/ESMA_cmake/archive/refs/tags/v3.4.3.tar.gz ; tar -xvf v3.4.3.tar.gz 
 
-wget https://github.com/HDFGroup/hdf5/archive/refs/tags/hdf5-1_14_0.tar.gz
+wget https://github.com/HDFGroup/hdf5/archive/refs/tags/hdf5-1_14_3.tar.gz
 wget https://github.com/Unidata/netcdf-c/archive/v4.9.2.tar.gz ; mv v4.9.2.tar.gz netcdf-c.v4.9.2.tar.gz ; tar -xvf netcdf-c.v4.9.2.tar.gz
 wget https://github.com/Unidata/netcdf-fortran/archive/v4.5.3.tar.gz ; mv v4.5.3.tar.gz netcdf-fortran.v4.5.3.tar.gz
 wget https://github.com/Unidata/netcdf-fortran/archive/v4.6.0.tar.gz ; mv v4.6.0.tar.gz netcdf-fortran.v4.6.0.tar.gz ; tar -xvf netcdf-fortran.v4.6.0.tar.gz

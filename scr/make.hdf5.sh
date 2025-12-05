@@ -13,9 +13,9 @@ export CPPFLAGS=-I${PREFIX}/include
 export LD_LIBRARY_PATH="$PREFIX/lib:${LD_LIBRARY_PATH}"
 
 
-tar -xvf  hdf5-1_14_0.tar.gz
+tar -xvf  hdf5-1_14_3.tar.gz
 
-cd hdf5-hdf5-1_14_0/
+cd hdf5-hdf5-1_14_3/
 ./configure --prefix=$PREFIX --enable-hl --enable-parallel  --enable-fortran --disable-shared 2>&1 | tee ../logs/hdf5.config
 make clean
 make  2>&1 | tee logs/hdf5.make
