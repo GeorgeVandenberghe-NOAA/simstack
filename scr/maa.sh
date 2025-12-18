@@ -6,7 +6,7 @@ export CONFIG_SITE=/tmp/dummy
 
  ftn --help
 export EC=$?
-if $FC
+if  test $FC
 then
 	echo COMPILER ALREADY SET
 else
@@ -65,6 +65,7 @@ tar -xvf  hdf5-1_14_0.tar.gz
 
 time sh -x make.hdf5.sh 
 echo HDF5 INSTALL DONE
+read a
 cd $PW
 sh -x make.netcdfcc.sh
 echo NETCDF-C INSTALL DONE

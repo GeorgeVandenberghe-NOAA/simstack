@@ -57,7 +57,7 @@ cd nceplibs-w3nco
 cd $PW
 git clone https://github.com/noaa-emc/nceplibs-w3emc
 cd nceplibs-w3emc
-  git checkout v2.10.0
+  git checkout v2.12.0
 #  sh -x ../cmake.sh
 cd $PW
    git clone https://github.com/noaa-emc/nceplibs-nemsio
