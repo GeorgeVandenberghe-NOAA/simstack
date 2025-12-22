@@ -19,6 +19,6 @@ cd hdf5-hdf5-1_14_3/
 ./configure --prefix=$PREFIX --enable-hl --enable-parallel  --enable-fortran --disable-shared 2>&1 | tee ../logs/hdf5.config
 make clean
 make  2>&1 | tee logs/hdf5.make
-make install 2>&1 l | tee ../logs/hdf5.install
+make install 2>&1  | tee ../logs/hdf5.install
 ##############make check 
 echo HDF5 INSTALL DONE

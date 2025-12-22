@@ -24,7 +24,7 @@ git checkout v3.3.3
 cd $PW
 git clone  https://github.com/noaa-emc/nceplibs-sp
 cd nceplibs-sp
-git checkout v2.4.0
+git checkout v2.5.0
 cp ../CMakelists.txt.sp .
 #sh -x ../cmake.sh.omp
 cd $PW
