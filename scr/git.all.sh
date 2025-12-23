@@ -17,9 +17,7 @@ cd build
 ##make
 ##make install
 cd $PW
-git clone  https://github.com/noaa-emc/nceplibs-ip
-cd nceplibs-ip
-git checkout v3.3.3 
+git clone  https://github.com/noaa-emc/nceplibs-ip ; cd nceplibs-ip ;  git checkout v3.3.3 
 #sh -x ../cmake.sh
 cd $PW
 git clone  https://github.com/noaa-emc/nceplibs-sp
@@ -30,79 +28,53 @@ cp ../CMakelists.txt.sp .
 cd $PW
 git clone  https://github.com/Goddard-Fortran-Ecosystem/fArgParse.git fargparse
 
-   git clone https://github.com/noaa-emc/nceplibs-sigio
-    cd nceplibs-sigio
- git checkout v2.3.2
+   git clone https://github.com/noaa-emc/nceplibs-sigio ;  cd nceplibs-sigio ; git checkout v2.3.2
 cd $PW
-git clone  https://github.com/noaa-emc/nceplibs-landsfcutil
-cd nceplibs-landsfcutil
-git checkout v2.4.1
+git clone  https://github.com/noaa-emc/nceplibs-landsfcutil ; cd nceplibs-landsfcutil ; git checkout v2.4.1
 cd $PW
 #    sh -x ../cmake.sh
 cd $PW 
 
- git clone https://github.com/noaa-emc/nceplibs-sfcio
- cd nceplibs-sfcio
-git checkout v1.4.1
+ git clone https://github.com/noaa-emc/nceplibs-sfcio ; cd nceplibs-sfcio ; git checkout v1.4.1
 #    sh -x ../cmake.sh
 cd $PW
-  git clone https://github.com/noaa-emc/nceplibs-bacio
-  cd nceplibs-bacio
-  git checkout v2.4.1
+  git clone https://github.com/noaa-emc/nceplibs-bacio ; cd nceplibs-bacio ; git checkout v2.4.1
 #  sh -x ../cmake.sh
 git clone https://github.com/noaa-emc/nceplibs-w3nco
 cd nceplibs-w3nco
   git checkout v2.4.1
 #  sh -x ../cmake.sh
 cd $PW
-git clone https://github.com/noaa-emc/nceplibs-w3emc
-cd nceplibs-w3emc
-  git checkout v2.12.0
+git clone https://github.com/noaa-emc/nceplibs-w3emc ; cd nceplibs-w3emc;  git checkout v2.12.0
 #  sh -x ../cmake.sh
 cd $PW
-   git clone https://github.com/noaa-emc/nceplibs-nemsio
-    cd nceplibs-nemsio
-    git checkout v2.5.4
+   git clone https://github.com/noaa-emc/nceplibs-nemsio ; cd nceplibs-nemsio ; git checkout v2.5.4
 #    sh -x ../cmake.sh
 cd $PW
-   git clone  https://github.com/noaa-emc/nceplibs-g2c
-      cd nceplibs-g2c
-   git checkout v1.6.4
+   git clone  https://github.com/noaa-emc/nceplibs-g2c ;  cd nceplibs-g2c ; git checkout v1.6.4
 #   sh -x ../cmake.sh
 cd $PW
-  git clone  https://github.com/noaa-emc/nceplibs-g2tmpl
- cd nceplibs-g2tmpl
-  git checkout v1.13.0
+  git clone  https://github.com/noaa-emc/nceplibs-g2tmpl ; cd nceplibs-g2tmpl ; git checkout v1.13.0
 #  sh -x ../cmake.sh
 cd $PW
-git clone  https://github.com/noaa-emc/nceplibs-gfsio
-cd nceplibs-gfsio 
- git checkout v1.4.1
+git clone  https://github.com/noaa-emc/nceplibs-gfsio ;  cd nceplibs-gfsio  ; git checkout v1.4.1
 # sh -x ../cmake.sh
 cd $PW
 rm -rf nceplibs-bufr ncdiag ncio nceplibs-wrf_io
-git clone https://github.com/noaa-emc/nceplibs-bufr
-cd nceplibs-bufr
-git checkout bufr_v11.7.0
+git clone https://github.com/noaa-emc/nceplibs-bufr ; cd nceplibs-bufr ; git checkout bufr_v11.7.0
 cd $PW
 #read a
 
-git clone https://github.com/NOAA-EMC/GSI-ncdiag ncdiag
-cd ncdiag
-git checkout v1.1.1
+git clone https://github.com/NOAA-EMC/GSI-ncdiag ncdiag ; cd ncdiag ; git checkout v1.1.1
 
 #read a
 cd $PW
 rm -rf ncio
-git clone https://github.com/noaa-emc/nceplibs-ncio ncio
-cd ncio
-git checkout v1.1.2
+git clone https://github.com/noaa-emc/nceplibs-ncio ncio ; cd ncio ; git checkout v1.1.2
 #read a
 
 cd $PW
-git clone https://github.com/noaa-emc/nceplibs-wrf_io
-cd nceplibs-wrf_io
-git checkout v1.2.0
+git clone https://github.com/noaa-emc/nceplibs-wrf_io ; cd nceplibs-wrf_io  ; git checkout v1.2.0
 cd $PW
 
 #add build shells
@@ -207,8 +179,10 @@ wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.4.1.tar.gz ;  mv  v8
 wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.5.0.tar.gz ;  mv  v8.5.0.tar.gz esmf.v8.5.0.tar.gz
 wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.6.1.tar.gz ;  mv  v8.6.1.tar.gz esmf.v8.6.1.tar.gz
 wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.6.0.tar.gz ;  mv  v8.6.0.tar.gz esmf.v8.6.0.tar.gz
-# wget https://github.com/esmf-org/esmf/archive/refs/tags/v8.8.0b09.tar.gz ; mv v8.8.0b09.tar.gz esmf.v8.8.0b09.tar.gz
+ wget https://github.com/esmf-org/esmf/archive/refs/tags/v8.8.0.tar.gz ; mv v8.8.0.tar.gz esmf.v8.8.0.tar.gz
+ wget https://github.com/esmf-org/esmf/archive/refs/tags/v8.9.0.tar.gz ; mv v8.9.0.tar.gz esmf.v8.9.0.tar.gz
  wget https://github.com/esmf-org/esmf/archive/refs/tags/v8.8.0b10.tar.gz ; mv v8.8.0b10.tar.gz esmf.v8.8.0b10.tar.gz
+
 
 
 wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.46.4.tar.gz  ; mv v2.46.4.tar.gz MAPL.v2.46.4.tar.gz ; tar -xvf MAPL.v2.46.4.tar.gz 

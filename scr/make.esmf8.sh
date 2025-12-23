@@ -1,10 +1,10 @@
 
 #!/bin/bash
 export PW=`/bin/pwd`
-rm -rf esmf-8.8.0b10
-tar -xvf esmf.v8.8.0b10.tar.gz
+rm -rf esmf-8.8.0
+tar -xvf esmf.v8.8.0.tar.gz
 
-cd  esmf-8.8.0b10
+cd  esmf-8.8.0
  
 sh -x ../fixit
 
@@ -30,7 +30,7 @@ echo $ESMF_NETCDF_LIBS
 sleep 5
 export ESMF_NETCDF_LIBS=" -lnetcdff -lnetcdf -L$HDF5_DIR/lib  -lhdf5 -lhdf5_hl -lhdf5 -lz"
 echo $ESMF_NETCDF_LIBS 
-export ename=ESMF_8_8_10     
+export ename=ESMF_8_8_0     
 
 export ESMF_INSTALL_PREFIX=$NETCDF/$ename
 
