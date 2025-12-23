@@ -50,8 +50,8 @@ rm setupa
 echo " export PREFIX=$PREFIX">>setupa
 echo " export NETP=$PREFIX" >>setupa
 echo " export CMAKE_PREFIX_PATH=$PREFIX" >>setupa
-echo " export ESMFMKFILE=$PREFIX/ESMF_8_8_10/lib/esmf.mk" >>setupa
-echo " export emmf_ROOT=$PREFIX/ESMF_8_8_10" >>setupa
+echo " export ESMFMKFILE=$PREFIX/ESMF_8_8_0/lib/esmf.mk" >>setupa
+echo " export emmf_ROOT=$PREFIX/ESMF_8_8_0" >>setupa
 
 
 rm -rf netcdf-c-4.7.4  netcdf-fortran-4.5.3  netcf-fortran-4.6.0  netcdf-c-4.9.1 netcdf-c.v4.9.2.tar.gz hdf5.122 netcdf-fortran-4.6.0/
