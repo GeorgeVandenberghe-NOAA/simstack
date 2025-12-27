@@ -175,33 +175,34 @@ wget https://github.com/HDFGroup/hdf5/archive/refs/tags/hdf5-1_14_3.tar.gz
 wget https://github.com/Unidata/netcdf-c/archive/v4.9.2.tar.gz ; mv v4.9.2.tar.gz netcdf-c.v4.9.2.tar.gz ; tar -xvf netcdf-c.v4.9.2.tar.gz
 wget https://github.com/Unidata/netcdf-fortran/archive/v4.5.3.tar.gz ; mv v4.5.3.tar.gz netcdf-fortran.v4.5.3.tar.gz
 wget https://github.com/Unidata/netcdf-fortran/archive/v4.6.0.tar.gz ; mv v4.6.0.tar.gz netcdf-fortran.v4.6.0.tar.gz ; tar -xvf netcdf-fortran.v4.6.0.tar.gz
-wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.4.1.tar.gz ;  mv  v8.4.1.tar.gz esmf.v8.4.1.tar.gz
-wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.5.0.tar.gz ;  mv  v8.5.0.tar.gz esmf.v8.5.0.tar.gz
-wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.6.1.tar.gz ;  mv  v8.6.1.tar.gz esmf.v8.6.1.tar.gz
-wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.6.0.tar.gz ;  mv  v8.6.0.tar.gz esmf.v8.6.0.tar.gz
+
+#wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.4.1.tar.gz ;  mv  v8.4.1.tar.gz esmf.v8.4.1.tar.gz
+#wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.5.0.tar.gz ;  mv  v8.5.0.tar.gz esmf.v8.5.0.tar.gz
+#wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.6.1.tar.gz ;  mv  v8.6.1.tar.gz esmf.v8.6.1.tar.gz
+#wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.6.0.tar.gz ;  mv  v8.6.0.tar.gz esmf.v8.6.0.tar.gz
  wget https://github.com/esmf-org/esmf/archive/refs/tags/v8.8.0.tar.gz ; mv v8.8.0.tar.gz esmf.v8.8.0.tar.gz
  wget https://github.com/esmf-org/esmf/archive/refs/tags/v8.9.0.tar.gz ; mv v8.9.0.tar.gz esmf.v8.9.0.tar.gz
- wget https://github.com/esmf-org/esmf/archive/refs/tags/v8.8.0b10.tar.gz ; mv v8.8.0b10.tar.gz esmf.v8.8.0b10.tar.gz
+# wget https://github.com/esmf-org/esmf/archive/refs/tags/v8.8.0b10.tar.gz ; mv v8.8.0b10.tar.gz esmf.v8.8.0b10.tar.gz
 
 
 
-wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.46.4.tar.gz  ; mv v2.46.4.tar.gz MAPL.v2.46.4.tar.gz ; tar -xvf MAPL.v2.46.4.tar.gz 
-wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.46.3.tar.gz  ; mv v2.46.3.tar.gz MAPL.v2.46.3.tar.gz ; tar -xvf MAPL.v2.46.3.tar.gz 
-wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.40.3.tar.gz  ; mv v2.40.3.tar.gz MAPL.v2.40.3.tar.gz ; tar -xvf MAPL.v2.40.3.tar.gz 
-wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.35.2.tar.gz  ; mv v2.35.2.tar.gz MAPL.v2.35.2.tar.gz ; tar -xvf MAPL.v2.35.2.tar.gz 
+#wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.46.4.tar.gz  ; mv v2.46.4.tar.gz MAPL.v2.46.4.tar.gz ; tar -xvf MAPL.v2.46.4.tar.gz 
+#wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.46.3.tar.gz  ; mv v2.46.3.tar.gz MAPL.v2.46.3.tar.gz ; tar -xvf MAPL.v2.46.3.tar.gz 
+#wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.40.3.tar.gz  ; mv v2.40.3.tar.gz MAPL.v2.40.3.tar.gz ; tar -xvf MAPL.v2.40.3.tar.gz 
+#wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.35.2.tar.gz  ; mv v2.35.2.tar.gz MAPL.v2.35.2.tar.gz ; tar -xvf MAPL.v2.35.2.tar.gz 
 wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.53.4.tar.gz  ; mv v2.53.4.tar.gz MAPL.v2.53.4.tar.gz ; tar -xvf MAPL.v2.53.4.tar.gz 
 
-rm -rf pil-2.5.10  pio2_5_10.tar.gz ;  wget https://github.com/NCAR/ParallelIO/archive/refs/tags/pio2_5_10.tar.gz ; tar -xvf pio2_5_10.tar.gz  ;  mv  ParallelIO-pio2_5_10/  pio-2.5.10 ;  mkdir pio-2.5.10/genf90 
+rm -rf pio-2.5.10  pio2_5_10.tar.gz ;  wget https://github.com/NCAR/ParallelIO/archive/refs/tags/pio2_5_10.tar.gz ; tar -xvf pio2_5_10.tar.gz  ;  mv  ParallelIO-pio2_5_10/  pio-2.5.10 ;  mkdir pio-2.5.10/genf90 
 git clone https://github.com/Goddard-Fortran-Ecosystem/gFTL-shared 
 wget   https://github.com/Goddard-Fortran-Ecosystem/yaFyaml/archive/refs/tags/v1.0.4.tar.gz ; mv v1.0.4.tar.gz yafyaml.v1.0.4.tar.gz
 
- wget https://github.com/NOAA-GFDL/FMS/archive/refs/tags/2023.01.tar.gz ; mv 2023.01.tar.gz FMS.2023.01.tar.gz ; tar -xvf FMS.2023.01.tar.gz 
- wget https://github.com/NOAA-GFDL/FMS/archive/refs/tags/2023.02.01.tar.gz ; mv 2023.02.01.tar.gz FMS.2023.02.01.tar.gz ; tar -xvf FMS.2023.02.01.tar.gz 
- wget https://github.com/NOAA-GFDL/FMS/archive/refs/tags/2023.04.tar.gz ; mv 2023.04.tar.gz FMS.2023.04.tar.gz ; tar -xvf FMS.2023.04.tar.gz 
+# wget https://github.com/NOAA-GFDL/FMS/archive/refs/tags/2023.01.tar.gz ; mv 2023.01.tar.gz FMS.2023.01.tar.gz ; tar -xvf FMS.2023.01.tar.gz 
+# wget https://github.com/NOAA-GFDL/FMS/archive/refs/tags/2023.02.01.tar.gz ; mv 2023.02.01.tar.gz FMS.2023.02.01.tar.gz ; tar -xvf FMS.2023.02.01.tar.gz 
+# wget https://github.com/NOAA-GFDL/FMS/archive/refs/tags/2023.04.tar.gz ; mv 2023.04.tar.gz FMS.2023.04.tar.gz ; tar -xvf FMS.2023.04.tar.gz 
  wget https://github.com/NOAA-GFDL/FMS/archive/refs/tags/2024.01.tar.gz ; mv 2024.01.tar.gz FMS.2024.01.tar.gz ; tar -xvf FMS.2024.01.tar.gz 
 
     wget  https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/2.1.4.tar.gz ; mv 2.1.4.tar.gz jpeg.2.1.4.tar.gz ; tar -xvf jpeg.2.1.4.tar.gz
-wget https://github.com/NCAR/ParallelIO/archive/refs/tags/pio2_5_10.tar.gz ; tar -xvf pio2_5_10.tar.gz  ;  mv  ParallelIO-pio2_5_10/  pio-2.5.10 ;  mkdir pio-2.5.10/genf90 
+#wget https://github.com/NCAR/ParallelIO/archive/refs/tags/pio2_5_10.tar.gz ; tar -xvf pio2_5_10.tar.gz  ;  mv  ParallelIO-pio2_5_10/  pio-2.5.10 ;  mkdir pio-2.5.10/genf90 
 wget  https://github.com/GEOS-ESM/ESMA_cmake/archive/refs/tags/v3.4.3.tar.gz ; mv v3.4.3.tar.gz esma.v3.4.3.tar.gz ; tar -xvf esma.v3.4.3.tar.gz
 rm -rf  zlib-1.2.11
 git clone --recursive https://github.com/madler/zlib zlib-1.2.11 ; cd zlib-1.2.11 ; git checkout v1.2.11
