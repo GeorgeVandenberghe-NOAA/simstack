@@ -1,5 +1,5 @@
 rm -rf dists
-tar -xvf /tmp/dists.tar
+tar -xvf ./dists.tar 
 rm -rf build
 mkdir build
 cd build
