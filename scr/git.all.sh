@@ -18,6 +18,7 @@ cd build
 ##make install
 cd $PW
 git clone  https://github.com/noaa-emc/nceplibs-ip ; cd nceplibs-ip ;  git checkout v3.3.3 
+git clone  https://github.com/noaa-emc/nceplibs-ip nceplibs-ip2  ; cd nceplibs-ip2 ;  git checkout v5.1.0
 #sh -x ../cmake.sh
 cd $PW
 git clone  https://github.com/noaa-emc/nceplibs-sp
