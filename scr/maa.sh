@@ -62,6 +62,8 @@ rm -rf esmf-8.4.1
 tar -xvf netcdf-fortran.v4.6.0.tar.gz 
 tar -xvf  netcdf-c.v4.9.2.tar.gz 
 tar -xvf  hdf5-1_14_0.tar.gz
+# repair sigio and sfcio
+   tar -xvf ../fixes/sig.sfc.gsi.tar
 
 time sh -x make.hdf5.sh 
 echo HDF5 INSTALL DONE
