@@ -2,6 +2,9 @@ cd netcdf-c-4.9.2
 export LDFLAGS=-L${PREFIX}/lib
 export CPPFLAGS=-I${PREFIX}/include
 export LD_LIBRARY_PATH="$PREFIX/lib:${LD_LIBRARY_PATH}"
+export FFLAGS="-fPIC"
+export CFLAGS="-fPIC"
+
 #export LIBS=`$PREFIX/bin/nc-config --libs`
 
 make clean

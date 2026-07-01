@@ -1,6 +1,9 @@
 # building hdf5,netcdf with parallel compressed support
 ## SET EXTERNALLY.  MODULES FOR COMPILER AND MPI ARE ALSO SET EXTERNALLY
 export PW=`/bin/pwd`
+export FFLAGS="-fPIC"
+export CFLAGS="-fPIC"
+
 export CONFIG_SITE=/tmp/dummy
 export NETP=$PREFIX
 export CMAKE_PREFIX_PATH=$PREFIX
@@ -16,7 +19,8 @@ tar -xvf  netcdf-c.v4.9.2.tar.gz
 #cd  netcdf-fortran-4.5.3
 cd netcdf-fortran-4.6.0
 export LIBS=`$PREFIX/bin/nc-config --libs`
- ./configure --prefix=$PREFIX   --disable-shared  2>&1 | tee ../logs/netf.config
+ ./configure --prefix=$PREFIX     2>&1 | tee ../logs/netf.config
+ #./configure --prefix=$PREFIX   --disable-shared  2>&1 | tee ../logs/netf.config
 make clean
 make  2>&1  | tee ../logs/netf.make
 make install  2>&1  | tee ../logs/netf.install
