@@ -75,6 +75,8 @@ echo NETCDF-C INSTALL DONE
 cd $PW
 sh -x make.netcdfcc.sh
 sh -x make.netcdffcxx.sh
+sh -x make.ecbuild.sh
+sh -x make.zlib.shared.sh
 
 cd $PW
 #BUILD ESMF
