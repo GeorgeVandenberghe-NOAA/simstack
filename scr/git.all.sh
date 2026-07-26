@@ -184,7 +184,7 @@ wget  https://github.com/esmf-org/esmf/archive/refs/tags/v8.6.0.tar.gz ;  mv  v8
  wget https://github.com/esmf-org/esmf/archive/refs/tags/v8.8.0.tar.gz ; mv v8.8.0.tar.gz esmf.v8.8.0.tar.gz
  wget https://github.com/esmf-org/esmf/archive/refs/tags/v8.9.0.tar.gz ; mv v8.9.0.tar.gz esmf.v8.9.0.tar.gz
  wget https://github.com/esmf-org/esmf/archive/refs/tags/v8.8.0b10.tar.gz ; mv v8.8.0b10.tar.gz esmf.v8.8.0b10.tar.gz
-
+wget https://github.com/esmf-org/esmf/archive/refs/tags/v8.0.1.tar.gz ; mv v8.0.1.tar.gz esmf.v8.0.1.tar.gz
 
 
 wget https://github.com/GEOS-ESM/MAPL/archive/refs/tags/v2.46.4.tar.gz  ; mv v2.46.4.tar.gz MAPL.v2.46.4.tar.gz ; tar -xvf MAPL.v2.46.4.tar.gz 
