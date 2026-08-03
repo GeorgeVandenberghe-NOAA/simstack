@@ -14,3 +14,5 @@ git checkout v2.4.1
 sh ../cmake.sh
 cd ..
 
+cp $NETP/lib64/* $NETP/lib
+
