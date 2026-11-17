@@ -19,8 +19,8 @@ tar -xvf  netcdf-c.v4.9.2.tar.gz
 #cd  netcdf-fortran-4.5.3
 cd netcdf-fortran-4.6.0
 export LIBS=`$PREFIX/bin/nc-config --libs`
- ./configure --prefix=$PREFIX     2>&1 | tee ../logs/netf.config
- #./configure --prefix=$PREFIX   --disable-shared  2>&1 | tee ../logs/netf.config
+# ./configure --prefix=$PREFIX     2>&1 | tee ../logs/netf.config
+./configure --prefix=$PREFIX   --disable-shared  2>&1 | tee ../logs/netf.config
 make clean
 make  2>&1  | tee ../logs/netf.make
 make install  2>&1  | tee ../logs/netf.install
